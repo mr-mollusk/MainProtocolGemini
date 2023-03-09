@@ -1,0 +1,37 @@
+@import "../../../styles/index.css";
+
+.typography {
+  margin: 0;
+  --size: 16;
+  --family: "Inter", sans-serif;
+  --lineHeight: 1.25;
+  --fontWeight: var(--weight, 400);
+  --textAlign: var(--align, initial);
+  --color: "";
+  --letter-spacing: -0.03em;
+  font-size: var(--size);
+  line-height: var(--styledLineHeight, var(--lineHeight), 1.25);
+  color: var(--color, inherit);
+  font-weight: var(--fontWeight);
+  text-align: var(--textAlign);
+  font-family: var(--family);
+  letter-spacing: var(--letter-spacing);
+}
+
+.h1 {
+  --family: "Monument Extended";
+  --size: 48px;
+  --weight: 700;
+}
+
+.h2 {
+  --family: "Monument Extended";
+  --size: 24px;
+  --weight: 400;
+}
+
+@media (max-width: 834px) {
+  .h1 {
+    --size: 24px;
+  }
+}
